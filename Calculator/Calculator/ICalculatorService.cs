@@ -7,7 +7,7 @@ using System.Text;
 
 namespace Calculator
 {
-    [ServiceContract]
+    [ServiceContract(Namespace ="CalculatorSvc")]
     public interface ICalculatorService
     {
         [OperationContract(Name ="AddInteger")]
@@ -18,5 +18,19 @@ namespace Calculator
 
         [OperationContract(Name = "AddString")]
         string Add(string text1, string text2);
+
+        [OperationContract(Name = "GetUserInfo")]
+        User Get(User user);
+    }
+
+    [DataContract]
+    public class User
+    {
+        [DataMember]
+        public string Name { get; set; }
+        [DataMember]
+        public int EmpId { get; set; }
+        [DataMember]
+        public DateTime Date_Of_Birth { get; set; }
     }
 }

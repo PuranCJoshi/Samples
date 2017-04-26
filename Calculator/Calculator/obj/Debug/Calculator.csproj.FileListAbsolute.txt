@@ -1,6 +1,5 @@
 D:\learning-phase\Calculator\Calculator\bin\Debug\Calculator.dll.config
 D:\learning-phase\Calculator\Calculator\bin\Debug\Calculator.dll
 D:\learning-phase\Calculator\Calculator\bin\Debug\Calculator.pdb
-D:\learning-phase\Calculator\Calculator\obj\Debug\Calculator.csprojResolveAssemblyReference.cache
 D:\learning-phase\Calculator\Calculator\obj\Debug\Calculator.dll
 D:\learning-phase\Calculator\Calculator\obj\Debug\Calculator.pdb

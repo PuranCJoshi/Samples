@@ -24,5 +24,16 @@ namespace Calculator
         {
             return num1 + num2;
         }
+
+        public User Get(User user)
+        {
+            switch (user.EmpId)
+            {
+                case 823:
+                    return new User { Name = "Puran Joshi", EmpId = 823, Date_Of_Birth = new DateTime(1988, 07, 30) };
+                default:
+                    throw new Exception("User doesn't exists");
+            }
+        }
     }
 }
