@@ -13,9 +13,11 @@ namespace Calculator.Test
         [Test]
         public void AddNumber()
         {
+            Console.WriteLine("Running Test case for Adding number");
             var calculatorSvc = new CalculatorService();
             int result = calculatorSvc.Add(1, 2);
             Assert.True(result == 3, "Additon of 1,2 should be 3 but getting " + result);
+            Console.WriteLine("Test completed successfully");
         }
     }
 }
