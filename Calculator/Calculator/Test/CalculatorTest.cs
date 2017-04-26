@@ -15,7 +15,7 @@ namespace Calculator.Test
         {
             var calculatorSvc = new CalculatorService();
             int result = calculatorSvc.Add(1, 2);
-            Console.WriteLine("Test Running");
+            Assert.True(result == 3, "Additon of 1,2 should be 3 but getting " + result);
         }
     }
 }
